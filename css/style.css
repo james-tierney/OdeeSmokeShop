@@ -96,16 +96,17 @@ section {
     padding: 110px 16% 90px;
 }
 
+
 .hero {
     height: 100vh;
-    width: 100%;
-    background: url(../images/portfolioImageBackground.png);
-    background-position: top right;
-    background-size: cover;
+        width: 100%;
+        background: url(../images/MeAtDesk.png);
+        background-position: right 10% bottom 60px;
+    background-repeat: no-repeat;
+    /* Set it to no-repeat */
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
 }
 
 .main-content h4 {
@@ -458,6 +459,22 @@ form .send-btn:hover{
     border-radius: 50%;
     color: var(--text-color);
     font-size: 27px;
+}
+
+.reviews {
+        background: var(--second-bg-color);
+    
+}
+
+#reviews-container {
+    display: flex;
+    
+    
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2rem;
+    /* Add the same margin as center-text for consistency */
 }
 
 @media (max-width: 1700px) {
