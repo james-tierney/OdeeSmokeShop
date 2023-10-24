@@ -99,14 +99,18 @@ section {
 
 .hero {
     height: 100vh;
-        width: 100%;
-        background: url(../images/MeAtDesk.png);
-        background-position: right 10% bottom 60px;
+    width: 100%;
+    /* background: url(../images/MeAtDesk.png); */
+    background-position: right 15% top 90px;
     background-repeat: no-repeat;
-    /* Set it to no-repeat */
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%); */
+    /* opacity: 0.5; */
+    /* Adjust the opacity value (0.0 - 1.0) to control the fading effect */
 }
 
 .main-content h4 {
@@ -251,18 +255,70 @@ header.sticky {
 }
 
 .box {
+flex: 1;
+    /* Let the boxes grow to fill available space equally */
+    margin: 10px;
+    /* Adjust margin as needed */
     padding: 80px 40px 66px;
     background: #2d343f;
     border-radius: 28px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
-    transition: all .50s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
+    
+}
+
+.review-box {
+    flex: 1;
+    /* Let the boxes grow to fill available space equally */
+    margin: 10px;
+    /* Adjust margin as needed */
+    padding: 80px 40px 66px;
+    background: #2d343f;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.review-box h3 {
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+    display: inline;
+    color: #13bbff
+}
+
+.review-box p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--other-color);
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.review-box a:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.review-box:hover {
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px) scale(1.03);
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .box img{
     margin-bottom: 20px;
 }
+
 
 .box h3 {
     font-size: 30px;
@@ -276,6 +332,7 @@ header.sticky {
     color: var(--other-color);
     line-height: 30px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .box a {
@@ -466,16 +523,7 @@ form .send-btn:hover{
     
 }
 
-#reviews-container {
-    display: flex;
-    
-    
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    align-items: center;
-    gap: 2.3rem;
-    margin-top: 4.2rem;
-    /* Add the same margin as center-text for consistency */
-}
+
 
 @media (max-width: 1700px) {
     header {
