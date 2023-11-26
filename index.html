@@ -3,8 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>JTierney Tech</title>
+        <title>Odee Smoke Shop</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/carousel.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+        <!-- fav icon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
         <!--box icon link-->
         <link rel="stylesheet"
@@ -23,38 +29,55 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+
+
+                <script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+
+
+            
+
         </head>
     <body>
 
         <header>
-            <a href="#" class="logo">JTierney <span>Tech</span></a>
+            <a href="#" class="logo">Odee Smoke<span> Shop</span></a>
             
             <div class="bx bx-menu" id="menu-icon"></div>
 
             <ul class="navlist">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Opening Times</a></li>
+                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="top-btnn">
-                <a href="#contact" class="h-btn">Contact me</a> 
+                <a href="#contact" class="h-btn">Contact us</a> 
             </div>
 
         </header>
         
         <section class="hero" id="home">
             <div class="main-content" data-aos="fade-in">
-                <h4>Hi, There!</h4>
-                <h1>I'm <span>James Tierney</span></h1>
-                <p style="color: white; font-style: bold; font-weight: 200;">Welcome to JTierney Tech, your one-stop destination for tailored tech solutions</p>
+                <!-- <h4>Hi, There!</h4> -->
+                <h1>Odee <span>Smoke Shop</span></h1>
+                <p style="color: white; font-weight: bold; font-size: 18px;">Welcome to Odee Smoke Shop, where passion meets vapor. Established with a commitment to providing an exceptional vaping
+                experience, we are more than just a shop – we're a community. Nestled at 1413 C Glenn St SW, Decatur, AL 35603, our space is designed for
+                enthusiasts seeking quality products, expert guidance, and a welcoming atmosphere
+                visit us in person to discover the perfect blend of flavors, the latest devices, and a community that shares your
+                passion. At Odee Smoke Shop, it's not just about vaping; it's about creating an experience. Join us on this journey, and
+                let's vape together.</p>
+
                 <div class="social">
-                    <a href="https://www.instagram.com/jamestierney9/"><i class="ri-instagram-fill"></i></a>
-                    <a href="https://twitter.com/JamesT1203"><i class="ri-twitter-x-fill"></i></a>
-                    <a href="https://www.youtube.com/channel/UCnlPwFxi6PN-Xz5O70dx1Bg"><i class="ri-youtube-fill"></i></a>
+                    <a href="https://www.instagram.com/odee.smoke/"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61553711526080&mibextid=kFxxJD"><i class="ri-facebook-circle-fill"></i></box-icon></a>
+                    <!-- <a href="https://www.youtube.com/channel/UCnlPwFxi6PN-Xz5O70dx1Bg"><i class="ri-youtube-fill"></i></a> -->
                 </div>
 
                 <div class="main-btn">
@@ -68,50 +91,191 @@
 
         <section class="about" id="about">
             <div class="about-img" data-aos="zoom-in-down">
-                <img src="/images/portfolioImage.jpg">
+                <img src="/images/smokeShpLogo.jpg">
             </div>
 
             <div class="about-text" data-aos="zoom-in-up">
-                <h2>I am a <span>Designer</span> <br>Web & Mobile Developer</h2>
+                <h2>Visit <span>us today to discover the finest smoking experience in Decatur.</span></h2>
                 <div class="exp-area">
                     <p class="exp">
-                        Experience: 
-                        <span>4 Years</span>
+                        Services:
+                        <span>Tobacoo Products | </span>
+                        <span>Vaping Supplies | </span>
+                        <span>Accessories | </span>
+                    </p>
+                    <p class="exp">
+                         Explore: 
+                        <span>Our curated selection of high-quality products.</span>
                     </p>
 
-                    <p class="exp">
-                        Specialty:
-                        <span>Web & Mobile Development, Software Applications</span>
-                    </p>
 
                     <p class="exp">
-                        Freelance:
-                        <span>Avaliable</span>
+                        Address:
+                        <span>1419 Glenn St SW Suit 204, Decatur, AL 35603, United States</span>
                     </p>
 
                 </div>
-                <a href="#portfolio" class="btn">View All Projects</a>
+                <a href="#portfolio" class="btn">View In Store Images</a>
             </div>
         </section>
+
+            <!--portfolio-->
+            
+            <div class="slider-container">
+            
+                <div class="center-text" data-aos="fade-down">
+                    <h2>Take A Look At Some Of Our Products</h2>
+                </div>
+            
+                <div class="slider-content">
+            
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImg1.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                            <i class="fa fa-heart"></i>
+                            <p>1,247</p>
+                        </a> -->
+                    </div>
+            
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage2.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                    <i class="fa fa-heart"></i>
+                                    <p>1,247</p>
+                                </a> -->
+                    </div>
+            
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage3.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                    <i class="fa fa-heart"></i>
+                                    <p>1,247</p>
+                                </a> -->
+                    </div>
+            
+            
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage4.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                    <i class="fa fa-heart"></i>
+                                    <p>1,247</p>
+                                </a> -->
+                    </div>
+            
+            
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage5.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                    <i class="fa fa-heart"></i>
+                                    <p>1,247</p>
+                                </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage6.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                    <i class="fa fa-heart"></i>
+                                    <p>1,247</p>
+                                </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage7.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                            <i class="fa fa-heart"></i>
+                                            <p>1,247</p>
+                                        </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage8.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                    <i class="fa fa-heart"></i>
+                                    <p>1,247</p>
+                                </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage9.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                            <i class="fa fa-heart"></i>
+                                            <p>1,247</p>
+                                        </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage10.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                        <i class="fa fa-heart"></i>
+                                        <p>1,247</p>
+                                    </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage11.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                        <i class="fa fa-heart"></i>
+                                        <p>1,247</p>
+                                    </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage12.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                                <i class="fa fa-heart"></i>
+                                                <p>1,247</p>
+                                            </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage13.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                        <i class="fa fa-heart"></i>
+                                        <p>1,247</p>
+                                    </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/smokeShpImage14.jpg" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                        <i class="fa fa-heart"></i>
+                                        <p>1,247</p>
+                                    </a> -->
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/lastSmokeShopImage.png" alt="1" />
+                        <h1 class="slider-single-title"></h1>
+                        <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                                            <i class="fa fa-heart"></i>
+                                            <p>1,247</p>
+                                        </a> -->
+                    </div>
+                </div>
+            </div>
 
         <!--services-->
         <section class="services" id="services">
             <div class="center-text" data-aos="fade-down">
-                <h2>My <span>Services</span></h2>
+                <h2>Opening<span>Times</span></h2>
             </div>
             <div class="services-content" data-aos="zoom-in-up">
-                <div class="box">
+                <!-- <div class="box">
                     <img src="images/s-1.svg">
                     <h3>Web & Mobile</h3>
                     <p>Bringing Your Ideas to Life in the Digital Realm, From web to mobile, I bring life to your concepts, delivering seamless
                     and responsive experiences. Explore the endless possibilities of web and mobile development.</p>
-                    <a href="#">
+                     <a href="#">
                         Download now
                         <i class="ri-arrow-right-line"></i> 
-                    </a>
-                </div>
+                    </a> -->
+                <!-- </div> -->
 
-                <div class="box">
+                <!-- <div class="box">
                     <img src="images/s-2.svg">
                     <h3>Software Applications</h3>
                     <p>I craft software applications that empower businesses and individuals. With years of experience, I specialize in
@@ -119,146 +283,67 @@
                     <a href="#">
                         Download now
                         <i class="ri-arrow-right-line"></i>
-                    </a>
-                </div>
+                    </a> -->
+                <!-- </div> -->
 
                 <div class="box">
-                    <img src="images/s-3.svg">
-                    <h3>UI/UX Design</h3>
-                    <p>Elevating User Experiences through Innovative Design. I'm dedicated to creating intuitive, user-centric designs that
-                    captivate and engage. Discover how thoughtful UI/UX design can transform your digital journey.</p>
-                    <a href="#">
+                    <img src="images/clock-svgrepo-com.svg">
+                    <h3>Opening Times</h3>
+                    <p>Get us at Mon-Sat 9am-9pm & Sundays 10am-8pm</p>
+                    <!-- <a href="#">
                         Download now
                         <i class="ri-arrow-right-line"></i>
-                    </a>
+                    </a> -->
                 </div>
 
             </div>
         </section>
 
-        <!--portfolio-->
-        <section class="portfolio" id="portfolio">
-            <div class="center-text" data-aos="fade-down">
-                <h2>My <span>Portfolio</span></h2>
-            </div>
+  
 
-            <div class="Portfolio-content" data-aos="zoom-in-up">
-                <div class="row">
-                    <iframe width="560" height="450" src="https://www.youtube.com/embed/O9YjB28a14I?si=H8nfxwDJTq2K8o-s"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Web Development</h5>
-                        </div>
-                        <!-- <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div> -->
-                    </div>
-                    <h4>Study Zone (All in one study space)</h4>
-                </div>
-                <div class="row">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y2LXg6UzBZ4?si=VsLFGOak4zIFnHmu"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Website Development</h5>
-                        </div>
-                        <!-- <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div> -->
-                    </div>
-                    <h4>Art Listing Site For Artist To Upload & Display Their Work</h4>
-                </div>
-                <div class="row">
-                    <iframe width="315" height="560" src="https://www.youtube.com/embed/wx9sMekQCMo" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Website Development</h5>
-                        </div>
-                        <!-- <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div> -->
-                    </div>
-                    <h4>Moonrise Mobile App To Track & Monitor Sleep</h4>
-                </div>
-                <div class="row">
-                    <img src="images/ImageOfPortfolioSitePurple.png">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Portfolio Website</h5>
-                        </div>
-                        <div class="row-icon">
-                            <i class="ri-github-fill"><a href="https://github.com/james-tierney/Portfolio"></a></i>
-                        </div>
-                    </div>
-                    <h4>Another Portfolio Site That I Designed and Developed</h4>
-                    <a href="https://jtierney-tech.netlify.app/" class="scroll-top">Visit This Site</a>
-                </div>
-                <!-- <div class="row">
-                    <img src="images/port-5.jpg">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Coming Soon!</h5>
-                        </div>
-                        <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div>
-                    </div>
-                    <h4>More projects added very soon!</h4>
 
-                </div>
-                <div class="row">
-                    <img src="images/port-6.jpg">
-                    <div class="main-row">
-                        <div class="row-text">
-                            <h5>Coming Soon!</h5>
-                        </div>
-                        <div class="row-icon">
-                            <i class="ri-github-fill"></i>
-                        </div>
-                    </div>
-                    <h4>More projects added very soon!</h4>
-                </div> -->
-            </div>
-
-        </section>
+  
 
         <section  id="reviews">
-            <div class="center-text" data-aos="fade-down">
-                <h2>Customer <span>Reviews</span></h2>
-            </div>
-<div class="services-content" data-aos="zoom-in-up">
-    <div class="box-container">
-        <div class="review-box">
-            <h3>Study Zone</h3>
-            <p>James delivered an exceptional application with The Study Zone site. The design is sleek and modern, which is a
-            testament to his expertise. Now, I have all my favorite lofi stations in one place, making study sessions more
-            enjoyable. James' attention to detail and commitment to user satisfaction was very noticeable, and the delivered project
-            showcased such.</p>
-        </div>
-
-        <div class="review-box">
-            <h3>Art Listing</h3>
-            <p>The art listing site is an invaluable tool for artists. It simplifies the process of listing and managing my artwork,
-            and the design is visually appealing. The project was delivered promptly, and I am highly satisfied with the outcome.</p>
-        </div>
-
-        <div class="review-box">
-            <h3>Mobile App Moonrise</h3>
-            <p>Working with James during the development of Moonrise was a great experience. He was professional and transparent
-            throughout the process, providing regular updates and addressing all my requirements. Moonrise perfectly fits my needs
-            for tracking and enhancing my sleep. It was delivered on time, and the design is smooth, intuitive, and fits the mood
-            well. I'm highly satisfied with its performance and its ability to address my sleep-related needs.</p>
-        </div>
-    </div>
+<div id="reviews-container" class="box-container" data-aos="zoom-in-up">
+    <!-- Reviews will be dynamically loaded here -->
 </div>
+
+<!-- <script>
+    let reviews;
+    const placeId =
+        "EjExNDE5IEdsZW5uIFN0IFNXIHN1aXQgMjA0LCBEZWNhdHVyLCBBTCAzNTYwMywgVVNBIiQaIgoWChQKEgkLVDB2d4RiiBHX5Nek11qoCBIIc3VpdCAyMDQ";
+    const apiKey = "AIzaSyBBeJPYcvMnLdJXma82OUGRgCtaFIP2bmo";
+    const apiUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&key=${apiKey}`;
+
+    function loadReviews() {
+        const reviewsContainer = document.getElementById('reviews-container');
+
+        reviews.forEach(review => {
+            const reviewBox = document.createElement('div');
+            reviewBox.classList.add('review-box');
+
+            reviewBox.innerHTML = `
+                <h3>${review.author_name}</h3>
+                <p>${review.text}</p>
+            `;
+
+            reviewsContainer.appendChild(reviewBox);
+        });
+    }
+
+    fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            // Handle the response data (reviews)
+            reviews = data.result.reviews;
+            console.log("Google Reviews = ", reviews);
+
+            // Call the function to load reviews
+            loadReviews();
+        })
+        .catch((error) => console.error("Error fetching reviews:", error));
+</script> -->
 
                 </section>
 
@@ -266,7 +351,7 @@
 
         <section class="contact" id="contact">
             <div class="center-text" data-aos="fade-down">
-                <h2>Contact <span>Me</span></h2>
+                <h2>Contact Us On <span>256-686-1749</span></h2>
             </div>
             
             <div class="contact-form" data-aos="zoom-in">
@@ -284,7 +369,7 @@
         <!--footer-->
         <div class="footer">
             <div class="copyright">
-                <p>2023 James Tierney, All Rights Reserved</p>
+                <p>2023 Odee Smoke Shop, All Rights Reserved</p>
             </div>
 
             <a href="#home" class="scroll-top">
@@ -295,6 +380,7 @@
         <!--js link-->
         <script src="js/script.js"></script>
         <script src="js/email.js"></script>
+        <script src="js/carousel.js"></script>
         <!-- <script src="js/reviews.js"></script> -->
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

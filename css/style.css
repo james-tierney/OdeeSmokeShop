@@ -22,7 +22,15 @@
 
 body {
     color: var(--text-color);
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
+        background-image: url('../images/BackgroundImageSmoke.jpg');
+            /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-size: cover;
+            /* Adjust as needed */
+            background-position: center;
+            /* Adjust as needed */
+            background-repeat: no-repeat;
+            /* Prevent the image from repeating */
 }
 
 header {
